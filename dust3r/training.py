@@ -32,8 +32,8 @@ from dust3r.losses import *  # noqa: F401, needed when loading the model
 from dust3r.inference import loss_of_one_batch  # noqa
 
 import dust3r.utils.path_to_croco  # noqa: F401
-import croco.utils.misc as misc  # noqa
-from croco.utils.misc import NativeScalerWithGradNormCount as NativeScaler  # noqa
+import croco_utils.misc as misc  # noqa
+from croco_utils.misc import NativeScalerWithGradNormCount as NativeScaler  # noqa
 
 
 def get_args_parser():
