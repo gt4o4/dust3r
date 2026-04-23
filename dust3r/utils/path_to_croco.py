@@ -15,5 +15,5 @@ if path.isdir(CROCO_MODELS_PATH):
     # workaround for sibling import
     sys.path.insert(0, CROCO_REPO_PATH)
 else:
-    raise ImportError(f"croco is not initialized, could not find: {CROCO_MODELS_PATH}.\n "
-                      "Did you forget to run 'git submodule update --init --recursive' ?")
+    # Fallback to global pip installation
+    pass
