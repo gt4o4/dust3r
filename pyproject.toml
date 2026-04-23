@@ -8,5 +8,5 @@ version = "0.1.0"
 description = "DUSt3R"
 dependencies = []
 
-[tool.setuptools]
-packages = ["dust3r", "datasets_preprocess"]
+[tool.setuptools.packages.find]
+include = ["dust3r", "dust3r.*", "datasets_preprocess", "datasets_preprocess.*"]
